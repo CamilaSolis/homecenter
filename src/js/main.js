@@ -42,7 +42,44 @@ $(document).ready(function(){
 			subcategoria: [
 				{
 					name_sc: "Ampolletas y Fluorescencia",
-					img_sc: ""
+					img_sc: "",
+					subsgtecategoria: [
+					{
+						name_ssc: "Ampolletas LED",
+						img: ""
+					},
+					{
+						name_ssc: "Ampolletas Ahorro de Energía",
+						img: ""
+					},
+					{
+						name_ssc: "Ampolletas Halógenas",
+						img: ""
+					},
+					{
+						name_ssc: "Ampolletas Incandescentes",
+						img: ""
+					},
+					{
+						name_ssc: "Ampolletas Eco Halógenas",
+						img: ""
+					},
+					{
+						name_ssc: "Ampolletas Vintage Edison",
+						img: ""
+					},
+					{
+						name_ssc: "Flourescencia Compacta",
+						img: ""
+					},
+					{
+						name_ssc: "Fluorescentes Circulares",
+						img: ""
+					},
+					{
+						name_ssc: "Tubos Fluorescente",
+						img: ""
+					}]
 				},
 				{
 					name_sc: "Iluminación Exterior",
