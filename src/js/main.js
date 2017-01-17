@@ -265,3 +265,72 @@ $(document).ready(function(){
 
 	});*/
 });
+
+//carrusel
+
+$('#slider3 .item3').each(function(i){
+  var $this = $(this),
+      width = $this.width(),
+      left = width * i,
+      color = 25 * i;
+  $this.css({ left: left })
+  .find('.inset3').css({ backgroundColor: 'white' });
+});
+$('.trigger3').on('click',function(){
+  var $this = $(this),
+      width = $('.item3').width() * 1,
+      speed = 500;
+  if ( $this.hasClass('first3') ) {
+    $('.frame3').animate({ scrollLeft: 0 },speed * 3);
+  } else if ( $this.hasClass('last3') ) {
+    $('.frame3').animate({ scrollLeft: $('.frame3')[0].scrollWidth },speed * 3);
+  } else if ( $this.hasClass('prev3') ) {
+    $('.frame3').animate({ scrollLeft: '-=' + width },speed);
+  } else if ( $this.hasClass('next3') ) {
+    $('.frame3').animate({ scrollLeft: '+=' + width },speed);
+  }
+});
+$('#slider2 .item2').each(function(i){
+  var $this = $(this),
+      width = $this.width(),
+      left = width * i,
+      color = 25 * i;
+  $this.css({ left: left })
+  .find('.inset2').css({ backgroundColor: 'white' });
+});
+$('.trigger2').on('click',function(){
+  var $this = $(this),
+      width = $('.item2').width() * 1,
+      speed = 500;
+  if ( $this.hasClass('first2') ) {
+    $('.frame2').animate({ scrollLeft: 0 },speed * 3);
+  } else if ( $this.hasClass('last2') ) {
+    $('.frame2').animate({ scrollLeft: $('.frame2')[0].scrollWidth },speed * 3);
+  } else if ( $this.hasClass('prev2') ) {
+    $('.frame2').animate({ scrollLeft: '-=' + width },speed);
+  } else if ( $this.hasClass('next2') ) {
+    $('.frame2').animate({ scrollLeft: '+=' + width },speed);
+  }
+});
+$('#slider1 .item1').each(function(i){
+  var $this = $(this),
+      width = $this.width(),
+      left = width * i,
+      color = 25 * i;
+  $this.css({ left: left })
+  .find('.inset1').css({ backgroundColor: 'white' });
+});
+$('.trigger1').on('click',function(){
+  var $this = $(this),
+      width = $('.item1').width() * 1,
+      speed = 500;
+  if ( $this.hasClass('first1') ) {
+    $('.frame1').animate({ scrollLeft: 0 },speed * 3);
+  } else if ( $this.hasClass('last1') ) {
+    $('.frame1').animate({ scrollLeft: $('.frame1')[0].scrollWidth },speed * 3);
+  } else if ( $this.hasClass('prev1') ) {
+    $('.frame1').animate({ scrollLeft: '-=' + width },speed);
+  } else if ( $this.hasClass('next1') ) {
+    $('.frame1').animate({ scrollLeft: '+=' + width },speed);
+  }
+});

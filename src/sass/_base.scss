@@ -1,0 +1,266 @@
+
+#slider {
+  position: relative;
+  width: $width; 
+  height: $height;
+  margin: auto;
+  .trigger {
+    cursor: pointer;
+    position: absolute;
+    width: 35px; 
+    height: 50%;
+    padding: 0; 
+    margin: 0;
+    outline: 0; 
+    border: 0;
+    background: transparent;
+    &:hover { 
+      background: rgba(255,255,255,.5); 
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 10px; height: 10px;
+      margin: auto;
+      border-style: solid;
+    }
+  }
+  .prev { 
+    left: 0; 
+    &:before {
+      left: 5px;
+      border-width: 3px 0 0 3px;
+      border-color: $arrows transparent transparent $arrows;
+      transform: rotate(-45deg);
+    }
+  }
+  .next { 
+    right: 0; 
+    &:before {
+      right: 5px;
+      border-width: 3px 3px 0 0;
+      border-color: $arrows $arrows transparent transparent;
+      transform: rotate(45deg);
+    }
+  }
+  .frame {
+    position: absolute;
+    top: 0; left: 35px; 
+    right: 35px; 
+    bottom: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    overflow: hidden;
+    .item {
+      position: absolute;
+      top: 0; 
+      bottom: 0;
+      width: 25%; 
+      height: 100%;
+      .inset {
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;
+        margin: $gap * 2 $gap;
+        overflow: hidden;
+        .title { 
+          margin: 10px 0; 
+          font-weight: bold; 
+          text-align: center; 
+        }
+        .caption { 
+          font-size: 8pt;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+#slider3 {
+  @extend #slider;
+  height:$height2;
+  .trigger3 {
+    @extend .trigger;
+    &:hover { 
+      background: rgba(255,255,255,.5); 
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 10px; height: 10px;
+      margin: auto;
+      border-style: solid;
+    }
+  }
+  .prev3 { 
+    @extend .prev;
+    &:before {
+      left: 5px;
+      border-width: 3px 0 0 3px;
+      border-color: $arrows transparent transparent $arrows;
+      transform: rotate(-45deg);
+    }
+  }
+  .next3 { 
+    @extend .next;
+    &:before {
+      right: 5px;
+      border-width: 3px 3px 0 0;
+      border-color: $arrows $arrows transparent transparent;
+      transform: rotate(45deg);
+    }
+  }
+  .frame3 {
+    @extend .frame;
+    .item3 {
+      display: inline-block;
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 10%; 
+      height: 100%;
+      .inset3 {
+        @extend .inset;
+        margin: $gap * 2 $gap;
+        padding: 15px;
+        .title3 { 
+          @extend .title;
+        }
+        .caption3 { 
+          @extend .caption;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+#slider2 {
+  @extend #slider;
+  height:$height2;
+  .trigger2 {
+    @extend .trigger;
+    &:hover { 
+      background: rgba(255,255,255,.5); 
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 10px; height: 10px;
+      margin: auto;
+      border-style: solid;
+    }
+  }
+  .prev2 { 
+    @extend .prev;
+    &:before {
+      left: 5px;
+      border-width: 3px 0 0 3px;
+      border-color: $arrows transparent transparent $arrows;
+      transform: rotate(-45deg);
+    }
+  }
+  .next2 { 
+    @extend .next;
+    &:before {
+      right: 5px;
+      border-width: 3px 3px 0 0;
+      border-color: $arrows $arrows transparent transparent;
+      transform: rotate(45deg);
+    }
+  }
+  .frame2 {
+    @extend .frame;
+    .item2 {
+      display: inline-block;
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 10%; 
+      height: 100%;
+      .inset2 {
+        @extend .inset;
+        margin: $gap * 2 $gap;
+        padding: 15px;
+        .title2 { 
+          @extend .title;
+        }
+        .caption2 { 
+          @extend .caption;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+#slider1 {
+  @extend #slider;
+  height:$height2;
+  .trigger1 {
+    @extend .trigger;
+    &:hover { 
+      background: rgba(255,255,255,.5); 
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 10px; height: 10px;
+      margin: auto;
+      border-style: solid;
+    }
+  }
+  .prev1 { 
+    @extend .prev;
+    &:before {
+      left: 5px;
+      border-width: 3px 0 0 3px;
+      border-color: $arrows transparent transparent $arrows;
+      transform: rotate(-45deg);
+    }
+  }
+  .next1 { 
+    @extend .next;
+    &:before {
+      right: 5px;
+      border-width: 3px 3px 0 0;
+      border-color: $arrows $arrows transparent transparent;
+      transform: rotate(45deg);
+    }
+  }
+  .frame1 {
+    @extend .frame;
+    .item1 {
+      display: inline-block;
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 10%; 
+      height: 100%;
+      .inset1 {
+        @extend .inset;
+        margin: $gap * 2 $gap;
+        padding: 15px;
+        .title1 { 
+          @extend .title;
+        }
+        .caption1 { 
+          @extend .caption;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+.bajada{
+  text-align:center;
+}
