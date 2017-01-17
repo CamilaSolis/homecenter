@@ -334,3 +334,17 @@ $('.trigger1').on('click',function(){
     $('.frame1').animate({ scrollLeft: '+=' + width },speed);
   }
 });
+
+
+
+$("#demo1").click(function(){
+$('.no_display1').slideDown(500, function () {});
+});
+
+$("#demo2").click(function(){
+$('.no_display2').slideDown(500, function () {});
+});
+
+$("#demo3").click(function(){
+$('.no_display3').slideDown(500, function () {});
+});
