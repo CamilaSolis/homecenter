@@ -35,28 +35,28 @@ var items = {};
 		}
 	}
 	function butonCompare(){
-		console.log("buton");
-		var divFp = null;
-		var checked = $("input[type='checkbox']:checked");
-		if(checked.length != 2){
-			alert('NO!');
-		}else{
-			divFp = checked.parents().filter('.caja-container');
-			console.log(divFp);
-			swal({
-				title: '<i>HTML</i> <u>example</u>',
-				type: 'info',
-				html: 'asdfcv',
-				showCloseButton: true,
-				showCancelButton: true,
-				confirmButtonText:
-				'<i class="fa fa-thumbs-up"></i> Great!',
-				cancelButtonText:
-				'<i class="fa fa-thumbs-down"></i>'
-			});
-		}
-		return divFp;
+	console.log("buton");
+	var divFp = null;
+	var checked = $("input[type='checkbox']:checked");
+	if(checked.length > 2){
+		alert('NO!');
+	}else if(checked.length == 2){
+		divFp = checked.parents().filter('.caja-container');
+		console.log(divFp);
+		//diva = divFp[0].html();
+		/*divb = String(divFp[1].html());*/
+		swal({
+			title: '<h3>Comparativa</h3>',
+			html: divFp,
+			showCloseButton: true,
+			confirmButtonText: '<div class="btn btn-block">Gracias!</div>'
+		});
 	}
+	return divFp;
+}
 $(document).ready(function(){
 	ajaxProducts('products');
+	$('.botonComparar').on('click', function(){
+		butonCompare();
+	});
 });
