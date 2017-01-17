@@ -314,9 +314,6 @@ header{
 .bajada{
   text-align:center;
 }
-.no_display1, .no_display2, .no_display3{
-  display: none;
-}
 .boton{
   text-align:center;
   margin-bottom: 50px;
@@ -381,4 +378,8 @@ footer {
       margin: 0 10px;
     }
   }
+}
+.btn-primary{
+  width: 400px;
+  height: 40px;
 }

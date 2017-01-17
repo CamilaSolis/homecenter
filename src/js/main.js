@@ -201,6 +201,10 @@ $('.trigger1').on('click',function(){
 
 
 
+$('.no_display1').hide();
+$('.no_display2').hide();
+$('.no_display3').hide();
+
 $("#demo1").click(function(){
 $('.no_display1').slideDown(500, function () {});
 });
