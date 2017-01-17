@@ -1,3 +1,4 @@
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "src/sass/variables.scss";
-@import "src/sass/base.scss";
+@import 'variables';
+@import 'mixins';
+@import 'base';

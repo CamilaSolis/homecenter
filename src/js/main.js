@@ -259,5 +259,5 @@ $(document).ready(function(){
 	//guardar datos al dar click en buscar
 	$('#botonBuscar').on('click', function (){
 
-	})
+	});
 });
