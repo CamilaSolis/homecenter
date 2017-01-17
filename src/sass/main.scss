@@ -1,1 +1,6 @@
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "_variables";
+
+p{
+	color: $dark-red;
+}
