@@ -1,3 +1,7 @@
+img{
+  width: 50%;
+  height: 50%;
+}
 .botonComparar {
   position: fixed;
   top: 50%;
@@ -405,6 +409,12 @@ footer {
   width: 400px;
   height: 40px;
 }
-.publicidad img{
+.publicidad{
+margin-bottom: 50px;
+  img{
   width:100%;
+}
+}
+footer{
+  margin-top: 50px;
 }
