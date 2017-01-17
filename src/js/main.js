@@ -1,46 +1,46 @@
 $(document).ready(function(){
 
-	//arreglo de objetos con categorías, ccc y sub categorías
-	var categorias = [
+	//arreglo de objetos con categorías y sub categorías
+	var ctg = [
 		{
 			name: "Aire Libre-Parrillas",
-			img: "../../dist/img/airelibre_y_parrilla.png"
+			img: "dist/img/airelibre_y_parrilla.png"
 		},
 		{
-			name: "Automóvil",
-			img: "../../dist/img/automovil.png"
+			"name": "Automóvil",
+			"img": "dist/img/automovil.png"
 		},
 		{
 			name: "Baño",
-			img: "../../dist/img/bano.png"
+			img: "dist/img/bano.png"
 		},
 		{
 			name: "Cocina",
-			img: "../../dist/img/cocina.png"
+			img: "dist/img/cocina.png"
 		},
 		{
 			name: "Construcción",
-			img: "../../dist/img/construccion.png"
+			img: "dist/img/construccion.png"
 		},
 		{
 			name: "Decohogar",
-			img: "../../dist/img/decohogar.png"
+			img: "dist/img/decohogar.png"
 		},
 		{
 			name: "Electro y Línea Blanca",
-			img: "../../dist/img/electronica_lineablanca.png"
+			img: "dist/img/electronica_lineablanca.png"
 		},
 		{
 			name: "Ferretería",
-			img: "../../dist/img/ferreteria.png"
+			img: "dist/img/ferreteria.png"
 		},
 		{
 			name: "Herramientas",
-			img: "../../dist/img/herramientas.png"
+			img: "dist/img/herramientas.png"
 		},
 		{
 			name: "Iluminación",
-			img: "../../dist/img/iluminacion.png",
+			img: "dist/img/iluminacion.png",
 			subcategoria: [
 				{
 					name_sc: "Ampolletas y Fluorescencia",
@@ -111,29 +111,33 @@ $(document).ready(function(){
 		},
 		{
 			name: "Jardín y terrazas",
-			img: "../../dist/img/jardin_terraza.png"
+			img: "dist/img/jardin_terraza.png"
 		},
 		{
 			name: "Muebles",
-			img: "../../dist/img/muebles.png"
+			img: "dist/img/muebles.png"
 		},
 		{
 			name: "Pinturas",
-			img: "../../dist/img/pinturas.png"
+			img: "dist/img/pinturas.png"
 		},
 		{
 			name: "Pisos y cerámicas",
-			img: "../../dist/img/pisos_ceramica.png"
+			img: "dist/img/pisos_ceramica.png"
 		},
 		{
 			name: "Puertas y ventanas",
-			img: "../../dist/img/puertas_ventanas.png"
+			img: "dist/img/puertas_ventanas.png"
 		}
 	];
 
+	//agregar li con categorias desde la lista de objetos
+	for (var i=0; i<ctg.length; ++i){
+		$('.carrusel-ctg').append( '<div class="elementoCtg"><img src="' + ctg[i].img + '" alt="' + ctg[i].name + '"><h4>' + ctg[i].name + '</h4></div>' );
+	}
 	//funciones para quitar display=none en cada caso;
 	//aire libre-parrillas
-	$('').on('click', function(){
+	/*$('').on('click', function(){
 		$('').removeClass('ocultar');
 	});
 	//automovil
@@ -259,5 +263,5 @@ $(document).ready(function(){
 	//guardar datos al dar click en buscar
 	$('#botonBuscar').on('click', function (){
 
-	})
+	});*/
 });
