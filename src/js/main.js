@@ -7,8 +7,8 @@ $(document).ready(function(){
 			img: "dist/img/airelibre_y_parrilla.png"
 		},
 		{
-			"name": "Automóvil",
-			"img": "dist/img/automovil.png"
+			name: "Automóvil",
+			img: "dist/img/automovil.png"
 		},
 		{
 			name: "Baño",
@@ -44,68 +44,60 @@ $(document).ready(function(){
 			subcategoria: [
 				{
 					name_sc: "Ampolletas y Fluorescencia",
-					img_sc: "",
+					img_sc: "dist/img/ilu_amp_fluo.png",
 					subsgtecategoria: [
 					{
 						name_ssc: "Ampolletas LED",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_amp_led.png"
 					},
 					{
 						name_ssc: "Ampolletas Ahorro de Energía",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_ahorro.png"
 					},
 					{
 						name_ssc: "Ampolletas Halógenas",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_halogena.png"
 					},
 					{
 						name_ssc: "Ampolletas Incandescentes",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_incandecente.png"
 					},
 					{
 						name_ssc: "Ampolletas Eco Halógenas",
-						img_ssc: ""
-					},
-					{
-						name_ssc: "Ampolletas Vintage Edison",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_ecohalogena.png"
 					},
 					{
 						name_ssc: "Fluorescencia Compacta",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_fluor_compac.png"
 					},
 					{
 						name_ssc: "Fluorescentes Circulares",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_fluor_circ.png"
 					},
 					{
 						name_ssc: "Tubos Fluorescente",
-						img_ssc: ""
+						img_ssc: "dist/img/ilu2_fluor_tubo.png"
 					}]
 				},
 				{
 					name_sc: "Iluminación Exterior",
-					img_sc: ""
+					img_sc: "dist/img/ilu_externa.png"
 				},
 				{
 					name_sc: "Iluminación Interior",
-					img_sc: ""
+					img_sc: "dist/img/ilu_interior.png"
 				},
 				{
 					name_sc: "Iluminación LED",
-					img_sc: ""
+					img_sc: "dist/img/ilu_led.png"
 				},
 				{
 					name_sc: "Ventiladores de techo",
-					img_sc: ""
+					img_sc: "dist/img/ilu_ventilador.png"
 				},
 				{
 					name_sc: "Iluminación para tu negocio",
-					img_sc: ""
-				},
-				{
-					name_sc: "Automatización del Hogar",
-					img_sc: ""
+					img_sc: "dist/img/ilu_negocio.png"
 				}
 			]
 		},
